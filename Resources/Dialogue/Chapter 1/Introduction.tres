@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Resources/Dialogue/DialogueResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+Speaker = "Sanctuary"
+Content = "Hello Gladiator, welcome to the International Starship Sanctuary's Holo-Deck. 
+Today we will be running through a basic practice drill!
+
+Please pay attention as I guide you through the process. Good luck."

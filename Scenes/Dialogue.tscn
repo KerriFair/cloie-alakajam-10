@@ -1,0 +1,74 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Resources/Dialogue/Dialogue.gd" type="Script" id=1]
+[ext_resource path="res://Resources/Dialogue/Palanquin_Regular.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Resources/Dialogue/Palanquin_Bold.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Scenes/Chapter 1.gd" type="Script" id=4]
+[ext_resource path="res://Resources/Dialogue/Chapter 1/Introduction.tres" type="Resource" id=5]
+[ext_resource path="res://Resources/Dialogue/Chapter 1/Tutorial_Text_1.tres" type="Resource" id=6]
+[ext_resource path="res://Resources/Dialogue/Chapter 1/Tutorial_Text_2.tres" type="Resource" id=7]
+
+[node name="Dialogue" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1.78473
+margin_right = -1.78473
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Container" type="NinePatchRect" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -512.0
+margin_top = -200.0
+margin_right = 512.0
+rect_min_size = Vector2( 0, 200 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Container"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.2, 0.207843, 0.219608, 0.560784 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Body" type="RichTextLabel" parent="Container"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 28.0
+margin_top = 42.0
+margin_right = -28.0
+margin_bottom = -42.0
+custom_fonts/bold_font = ExtResource( 3 )
+custom_fonts/normal_font = ExtResource( 2 )
+custom_constants/line_separation = -16
+bbcode_enabled = true
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Speaker" type="Label" parent="Container"]
+margin_left = 12.0
+margin_right = 40.0
+margin_bottom = 14.0
+custom_fonts/font = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Library" type="Node" parent="."]
+
+[node name="Chapter 1" type="Node" parent="Library"]
+script = ExtResource( 4 )
+Dialogue = [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ]
+
+[node name="Tween" type="Tween" parent="."]
+[connection signal="gui_input" from="Container/Body" to="." method="_on_Body_gui_input"]
