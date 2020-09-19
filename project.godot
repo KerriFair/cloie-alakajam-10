@@ -8,9 +8,26 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Spatial",
+"class": "Map",
+"language": "GDScript",
+"path": "res://Resources/Arena/Map.gd"
+}, {
+"base": "MeshInstance",
+"class": "Threat",
+"language": "GDScript",
+"path": "res://Resources/Arena/Threat.gd"
+}, {
+"base": "Spatial",
+"class": "Tile",
+"language": "GDScript",
+"path": "res://Resources/Arena/Tile.gd"
+} ]
 _global_script_class_icons={
-
+"Map": "",
+"Threat": "",
+"Tile": ""
 }
 
 [application]
