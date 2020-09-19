@@ -1,0 +1,7 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Resources/Dialogue/DialogueResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+Content = "Try it out now, ahead of you is an impassable wall, this wall can be moved across the map and will knock anyone it hits over one tile before they are able to stop it."
