@@ -4,6 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
+Speaker = "Sanctuary"
 Content = "Hello Gladiator, welcome to the International Starship Sanctuary's Holo-Deck. 
 Today we will be running through a basic practice drill!
 

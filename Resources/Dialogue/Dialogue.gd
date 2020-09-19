@@ -16,6 +16,7 @@ func _ready():
 
 func showText():
 	show()
+	$Container/Speaker.text = body.Dialogue[CurrentIndex].Speaker
 	$Container/Body.bbcode_text = body.Dialogue[CurrentIndex].Content
 	tween.interpolate_property($Container/Body, "percent_visible",
 	0, 1, $Container/Body.text.length() / 80, Tween.TRANS_LINEAR, Tween.TRANS_LINEAR)
