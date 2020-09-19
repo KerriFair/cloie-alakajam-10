@@ -15,7 +15,7 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	pass
 
 # tiles can change sometimes
@@ -32,5 +32,5 @@ func setTileType(type):
 
 
 # do some damage or let pass i guess
-func onPlayerEnter(player):
+func onPlayerEnter(_player):
 	pass
