@@ -16,6 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Alakajam 10"
+run/main_scene="res://Resources/Arena/Game.tscn"
 config/icon="res://icon.png"
 
 [rendering]
