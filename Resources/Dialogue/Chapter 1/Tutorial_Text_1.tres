@@ -1,0 +1,7 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Resources/Dialogue/DialogueResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+Content = "This is the map. During combat threats will appear around the map, you will use these threats to defeat your enemy."
